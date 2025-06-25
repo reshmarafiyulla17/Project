@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Checker</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-success mb-4">Wine Quality Checker</h1>
+        <p class="text-center">Upload a CSV file with wine data to check the quality analysis and predictions.</p>
+
+        <!-- File upload form -->
+        <div class="mb-3">
+            <input type="file" class="form-control" id="fileInput" accept=".csv" />
+        </div>
+
+        <div id="result" class="text-center mb-4"></div>
+        
+        <!-- Optional: Display wine quality stats -->
+        <div id="wineStats" class="stats"></div>
+
+        <!-- Navigate to Prediction page -->
+        <button id="goToPredictionPage" class="btn btn-primary mt-4" style="display: none;">Go to Prediction</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

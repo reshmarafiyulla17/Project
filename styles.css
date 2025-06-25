@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stats {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 6px;
+    display: none;
+}
+
+.stats h3 {
+    color: #333;
+}
+
+.stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Adjust the chart size */
+#predictionChart {
+    width: 100% !important;    /* Set width to 100% of its parent container */
+    max-width: 400px;          /* Set max width for responsiveness */
+    height: 250px !important;  /* Set a fixed height for the chart */
+    margin: 0 auto;            /* Center the chart */
+}
